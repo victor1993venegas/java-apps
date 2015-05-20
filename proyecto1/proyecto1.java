@@ -1,3 +1,4 @@
+/* Programa para mostrar peliculas en cartelera , desde una sala de cine */
 import java.util.Scanner;
 public class proyecto1 {
     public static void main(String args[]) {
