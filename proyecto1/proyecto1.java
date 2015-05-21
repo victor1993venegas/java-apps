@@ -1,4 +1,5 @@
-/* Programa para mostrar peliculas en cartelera , desde una sala de cine */
+/* Programa para mostrar peliculas en cartelera , desde una sala de cine.
+Esta idea surge como una solución a las filas de espera en las salas de cine */
 import java.util.Scanner;
 public class proyecto1 {
     public static void main(String args[]) {
@@ -14,13 +15,24 @@ public class proyecto1 {
         Scanner innombre = new Scanner(System.in);
         Scanner inusuario = new Scanner(System.in);
 
-        /* opcion ingresar usuario */
-        System.out.println("ingresar nombre de usuario ?");
+        /* ingresar usuario , ! podria servir para unas base de datos */
+        System.out.println("¿ ingresar nombre de usuario ?");
         System.out.println();
         System.out.println("1) si");
         System.out.println("2) no");
         usuario = inusuario.nextInt();
 
+        /* validar opción usuario  */
+
+        while(usuario >2) {
+            System.out.println("¿ ingresar nombre de usuario ?");
+            System.out.println();
+            System.out.println("1) si");
+            System.out.println("2) no");
+            usuario = inusuario.nextInt();
+
+        }
+/* agregar usuario ? */
         if(usuario == 1) {
             System.out.println("ingrese nombre usuario: ");
             nombre = innombre.nextLine();
@@ -31,7 +43,6 @@ public class proyecto1 {
         /* Mensaje de bienvenida */
         System.out.println("Bienvenido a cine HOTTS");
         System.out.println();
-
 
         /* Controlar repeticiones del programa */
         while(operacion!=2) {
